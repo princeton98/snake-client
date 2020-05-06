@@ -3,7 +3,7 @@ const net = require("net");
 /** 
  *  Establishes connection with the game server
  */
-const connect = function() {
+const connect = function () {
   const conn = net.createConnection({
     host: "135.23.222.148",
     port: 50541
@@ -24,7 +24,7 @@ const connect = function() {
     setTimeout(() => {
       conn.write("Move: left")
     }, 2000);*/
-    });
+  });
   return conn;
 }
 let obj = { connect }

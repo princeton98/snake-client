@@ -13,7 +13,12 @@ const connect = function() {
   // recieving data from server
   conn.on('data', (data) => {
     console.log(data);
-  })
+  });
+  // print message to screen when connection is established
+  conn.on("connect", () => {
+    console.log("Successfully connected to game server");
+    conn.write("Name: YZK");
+  });
   return conn;
 }
 let obj = { connect }

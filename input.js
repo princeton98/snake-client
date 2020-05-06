@@ -30,6 +30,24 @@ const handleUserInput = function (stdin) {
       //console.log("right");
       connection.write("Move: right")
     }
+    if (stdin === "h") {
+      connection.write("Say: hello")
+    }
+    if (stdin === "k") {
+      connection.write("Say: I'm screwed")
+    }
+    if (stdin === "f") {
+      connection.write("Say: Gotcha!")
+    }
+    if (stdin === "r") {
+      connection.write("Say: nice try");
+    }
+    if (stdin === "e") {
+      connection.write("Say: Nice one");
+    }
+    if (stdin === "c") {
+      connection.write("Say: One more!");
+    }
   }
   )
 };
